@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notes App</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class='header__title'>Notes App</h1>
+            <h2 class='header__subtitle'>A Beginner Project</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container">
+            <span>Search:</span>
+            <input type="text" id="search" class='input' placeholder="search for a note">
+            <select name="Sorting" class='dropdown' id="filter-by">
+                <option value="byLastEdited">Sort by last Edited</option>
+                <option value="byNew">Sort by new</option>
+                <option value="byName">Sort by name</option>
+            </select>
+        </div>
+    </div>
+    <!-- <button id='proceed'> Proceed</button> -->
+    <div class="container">
+        <div id='searchresult'>
+
+        </div>
+        <button id="create-note" class='button'>Create Note</button>
+    </div>
+ 
+    <!-- <button id="delete-note">Remove All Notes</button> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src='notes-functions.js'></script>
+    <script src='notes-app.js'></script>
+</body>
+</html>
